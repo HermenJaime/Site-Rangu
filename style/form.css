@@ -54,24 +54,29 @@ nav a:hover{
 /*CORPO*/
 /*Configuração geral do corpo*/
 main{
-    width: auto;
-    height: 100%;
-    padding: 6vh 10px 6vh 10px;
+    max-width: 100%;
+    height: 75vh;
+    margin: 0px 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*Redimendsionando a section dentro formulário e centralizando*/
+
 section.cad{
-    max-width: 700px;
-    height: 50%;
-    margin: auto;
-    padding: 30px 30px 10px 30px;
+    width: 600px;
+    height: auto;
+    padding: 20px;
     border-radius: 10px;
 }
-/*Redimensionando o formulário e centralizando*/
+/*Deativao: Redimensionando o formulário e centralizando
 .cad form{
     max-width: 600px;
     margin: auto;
-    /*padding-top: 4px;*/
 }
+*/
+
 /*Configurando as bordas do campo fieldset*/
 .cad fieldset{
     border-radius: 0px 10px;
@@ -88,7 +93,7 @@ section.cad{
 /*Configurando os inputs*/
 .cad fieldset input{
     width: 98%;
-    padding: 2px 4px;
+    padding: 4px 4px;
     border-radius: 0px 10px;
     font-size: 1em;
 }
