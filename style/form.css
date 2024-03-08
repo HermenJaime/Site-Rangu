@@ -125,7 +125,7 @@ section a{
 
 /*RODAPÉ*/
 /*Configuração do rodapé*/
-footer p{
+footer{
     padding: 20px;
     text-align: center;
     color: white;

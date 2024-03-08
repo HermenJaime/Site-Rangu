@@ -115,7 +115,7 @@ main #ifrase{
     color: rgb(255, 166, 0)
 }
 #ifrase p{
-    padding-bottom: 60px;
+    padding: 0px 20px 60px 20px;
     font-size: 1.2em;
 }
 
