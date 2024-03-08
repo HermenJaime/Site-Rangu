@@ -57,11 +57,18 @@ main{
     max-width: 100%;
     height: 75.4vh;
     padding: 0px 10px;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
 }
+@media screen and (orientation: landscape) {
+    main{
+        height: 100%;
+        margin: 30px 50px;
+    }
+}
+
 
 /*Redimendsionando a section dentro formulário e centralizando*/
 
