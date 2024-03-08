@@ -1,0 +1,480 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: black;
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+}
+/*##################################################*/
+/*HEADER*/
+header{
+    margin: 0px;
+    background-color: black;
+    display: flex;
+}
+header>h1{
+    color: white;
+    padding: 20px;
+    text-shadow: 3px 3px 0px orange;
+    font-size: 2.5em;
+}
+header nav{
+    width: 100%;
+    text-align: right;
+}
+header div{
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0px 9px 0px;
+    overflow: auto;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+header a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+header .reg:hover{
+    color: black;
+    background-color: orange;
+    border-radius: 20px 0px 0px 20px;
+}
+header .ent:hover{
+    color: black;
+    background-color: orange;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/*##################################################*/
+/*MENU*/
+#menu{
+    background-color: black;
+    padding: 8px 0px;
+}
+#menu a{
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    font-weight: bold;
+}
+#menu a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+@media screen and (max-width: 600px){
+    #menu{
+        background-color: black;
+        margin: 0px;
+        padding-bottom: 0px;
+    }
+    #menu a{
+        display: block;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 9px;
+    }
+    #menu a:hover{
+        border-radius: 0px;
+    }
+}
+
+/*##################################################*/
+/*MAIN*/
+main{
+    background-color: white;
+    maX-width: 700px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.707);
+}
+main #ifrase{
+    width: 100%;
+    background-color: white;
+}
+#ifrase h1{
+    padding: 60px;
+}
+#ifrase span{
+    color: rgb(255, 166, 0)
+}
+#ifrase p{
+    padding-bottom: 60px;
+    font-size: 1.2em;
+}
+
+/*##################################################*/
+/*MAIN IMAGENS*/
+main .cont{
+    background-color: black;
+    padding: 20px;
+    color: yellow;
+    margin: 30px 0px;
+    /*
+    box-shadow: 0px 0px 10px black;
+    */
+}
+main .cont h2{
+    margin-bottom: 20px;
+}
+main .produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .produtos div{
+    width: 200px;
+    height: 200px;
+    /*background-color: gray;*/
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px orange;
+    transition-duration: .2s;
+}
+main .produtos div:hover{
+    transform: translate(0px, -10px);
+    box-shadow: 0px 6px 20px orange;
+}
+/*IMAGENS LANCHES*/
+main .produtos #lan1{
+    background-image: url(../img/lanche1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #lan1 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #lan2{
+    background-image: url(../img/lanche2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #lan2 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #lan3{
+    background-image: url(../img/lanche3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #lan3 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+/*IMAGENS ALMOÇO*/
+main .produtos #alm1{
+    background-image: url(../img/almoço1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #alm1 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #alm2{
+    background-image: url(../img/almoço2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #alm2 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #alm3{
+    background-image: url(../img/almoço3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #alm3 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+/*IMAGENS JANTAR*/
+main .produtos #jan1{
+    background-image: url(../img/jantar1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+main .produtos #jan1 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #jan2{
+    background-image: url(../img/jantar2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #jan2 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #jan3{
+    background-image: url(../img/jantar3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #jan3 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+/*IMAGENS SOBREMESA*/
+main .produtos #sob1{
+    background-image: url(../img/sobremesa1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+main .produtos #sob1 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #sob2{
+    background-image: url(../img/sobremesa2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+main .produtos #sob2 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #sob3{
+    background-image: url(../img/sobremesa3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #sob3 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+/*IMAGENS ESPECIAIS*/
+main .produtos #esp1{
+    background-image: url(../img/especiais1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #esp1 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #esp2{
+    background-image: url(../img/especiais2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #esp2 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+main .produtos #esp3{
+    background-image: url(../img/especiais3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+main .produtos #esp3 p{
+    display: inline-block;
+    color: yellow;
+    font-size: 2em;
+    margin-top: 6%;
+    padding: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.582);
+    box-shadow: 0px 0px 10px black;
+}
+/*############################*/
+/*BOTÃO MAIS*/
+main .cont #mais{
+    display: inline-block;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px orange;
+    transition-duration: .2s;
+}
+main .cont #mais:hover{
+    background-color: yellow;
+    box-shadow: 0px 6px 30px orange;
+    transform: translate(0, -4px);
+}
+/*##################################################*/
+/*MAIN FORMULÁRIO*/
+#feedback{
+    background-color: darkorange;
+    padding: 20px;
+}
+#feedback label{
+    margin: 0px 20px;
+    float: left;
+}
+#feedback textarea{
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 3px solid orange;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.542);
+}
+#feedback textarea:focus{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.542);
+}
+#feedback button{
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 10px;
+}
+#feedback button:hover{
+    background-color: yellow;
+}
+
+/*##################################################*/
+/*RODAPÉ*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+footer a{
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration:underline;
+}

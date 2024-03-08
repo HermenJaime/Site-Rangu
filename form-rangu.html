@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/form.css">
+
+    <title>Formulário Rangu</title>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rangu</h1> 
+    </header>
+    <nav>
+        <a href="index.html" target="_self">Home</a>
+        <a href="#" target="_blank">Sobre</a>
+    </nav>
+    <main>
+        <section class="cad">
+            <form action="cadastro.php" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Cadastro de Cliente</legend>
+                    <p>
+                        <label for="nome">Nome Completo: </label><br>
+                        <input type="text" name="nome" id="inome" required maxlength="70" placeholder="Digite seu nome...">
+                    </p>
+                    <p>
+                        <label for="nome">Email: </label><br>
+                        <input type="email" name="email" id="iemail" required placeholder="Digite seu email...">
+                    </p>
+                    <p>
+                        <label for="Telefone">Telefone: </label><br>
+                        <input type="tel" name="tel" id="itel" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(dd)91234-5678">
+                    </p>
+                    <p>
+                        <label for="cidade">Senha: </label><br>
+                        <input type="password" name="senha" id="isenha" required maxlength="10" placeholder="Crie sua senha..." autocomplete="off">
+                    </p>
+                    <p>
+                        <label for="bairro">Cofirmar senha: </label><br>
+                        <input type="password" name="confsenha" id="iconfsenha" required maxlength="10" placeholder="Digite sua senha novamente..." autocomplete="off">
+                    </p>
+                </fieldset>
+                <div class="bots">
+                    <input type="submit" value="Registrar" class="bot">
+
+                    <p>Esqueceu a senha? <a href="#" target="_blank">Clique aqui.</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/HermenJaime">Jame</a></p>
+    </footer>
+</body>
+</html>

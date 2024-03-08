@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+/*Configuração geral*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Definição de resolução do corpo da página*/
+body{
+    width: 100vw;
+    height: 100%;
+    background-color: black;
+    background-image: url(../img/img-landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    backdrop-filter: blur(10px);
+}
+/*########################################*/
+
+/*CABEÇALHO*/
+/*Configuração do background dos elementos principais*/
+header, nav, section.cad, footer{
+    background-color: black;
+    color: white;
+}
+/*Configuração da Logo(Título) da cabeçalho*/
+header h1{
+    text-shadow: 3px 3px 0px rgb(255, 179, 0);
+    padding: 20px;
+    font-size: 2.5em;
+}
+/*Configuração do elemento pai(nav) dos links*/
+nav{
+    padding: 8px 0px;
+}
+/*Configuração dos links do cabeçalho*/
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+/*Configuração do efeito dos links no cabeçalho*/
+nav a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+}
+/*########################################*/
+
+/*CORPO*/
+/*Configuração geral do corpo*/
+main{
+    height: 66.6%;
+    padding: 40px 10px 40px 10px;
+}
+/*Redimendsionando a section dentro formulário e centralizando*/
+section.cad{
+    max-width: 700px;
+    height: 50vh;
+    margin: auto;
+    padding: 30px 30px 70px 30px;
+    border-radius: 10px;
+}
+/*Redimensionando o formulário e centralizando*/
+.cad form{
+    max-width: 600px;
+    margin: auto;
+    /*padding-top: 4px;*/
+}
+/*Configurando as bordas do campo fieldset*/
+.cad fieldset{
+    border-radius: 0px 10px;
+    border: 2px solid yellow;
+}
+/*Destacando título do formulário*/
+.cad legend{
+    font-weight: bold;
+}
+/*Separando bordas das labels dos botões e campo fieldset*/
+.cad p{
+    padding: 10px;
+}
+/*Configurando os inputs*/
+.cad fieldset input{
+    width: 98%;
+    padding: 2px 4px;
+    border-radius: 0px 10px;
+    font-size: 1em;
+}
+/*Definindo efeito para o campo dos botões*/
+.cad fieldset input:hover{
+    background-color: rgb(226, 226, 226);
+}
+/*Centralizando o texto dos botões*/
+section .bots{
+    text-align: center;
+}
+/*Configuração dos botões de envio de dados*/
+main section .bot{
+    background-color: yellow;
+    padding: 6px; 
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    width: 100px;
+}
+
+/*Definindo efeito para os botões de envio e apagar*/
+section .bot:hover{
+    background-color: orange;
+}
+/*Configurar link de recuperar senha*/
+section a{
+    text-decoration: none;
+    color: lightgreen;
+}
+/*########################################*/
+
+/*RODAPÉ*/
+/*Configuração do rodapé*/
+footer{
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+footer a{
+    color: orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
