@@ -8,7 +8,7 @@
 }
 /*Definição de resolução do corpo da página*/
 body{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background-color: black;
     background-image: url(../img/img-landscape.jpg);
@@ -61,7 +61,7 @@ main{
 /*Redimendsionando a section dentro formulário e centralizando*/
 section.cad{
     max-width: 700px;
-    height: 50vh;
+    height: 72%;
     margin: auto;
     padding: 30px 30px 70px 30px;
     border-radius: 10px;
