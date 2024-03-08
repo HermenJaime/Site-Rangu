@@ -65,7 +65,7 @@ main{
 }
 @media screen and (orientation: portrait) {
     main{
-        height: 80vh;
+        height: 76vh;
     }
 }
 
