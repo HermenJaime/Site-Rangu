@@ -54,8 +54,9 @@ nav a:hover{
 /*CORPO*/
 /*Configuração geral do corpo*/
 main{
-    height: 100%;
-    padding: 40px 10px 40px 10px;
+    width: auto;
+    height: 70vh;
+    padding: 38px 10px 0px 10px;
 }
 /*Redimendsionando a section dentro formulário e centralizando*/
 section.cad{
@@ -124,7 +125,7 @@ section a{
 
 /*RODAPÉ*/
 /*Configuração do rodapé*/
-footer{
+footer p{
     padding: 20px;
     text-align: center;
     color: white;
