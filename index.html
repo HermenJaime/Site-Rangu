@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style/style.css">
     <title>Rangu</title>
 </head>
@@ -10,15 +11,19 @@
 <body>
     <header>
         <h1>Rangu</h1>
+
         <nav>
             <div>
                 <a href="form-rangu.html" target="_blank" class="reg">Registrar</a>
                 <a href="#" target="_blank" id="Entrar" class="ent">Entrar</a>
             </div>
         </nav>
+        
     </header>
-
-    <nav id="menu">
+    <span class="material-symbols-outlined" onclick="clickMenu()" id="botMenu">
+        menu
+        </span>
+    <nav id="menu" id="menuItems">
         <a href="#">Início</a>
 
         <a href="#lan">Lanches</a>
@@ -168,6 +173,16 @@
             </form>
         </section>
     </main>
+
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'none'){
+                menu.style.display = 'block'
+            } else{
+                menu.style.display = 'none'
+            }
+        }
+    </script>
 
     <footer>
         <p>Desenvolvido por <a href="https://github.com/HermenJaime" target="__blank">Jame</a></p>

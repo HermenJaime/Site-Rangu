@@ -16,9 +16,11 @@ body{
     height: 100%;
 }
 /*##################################################*/
+
 /*HEADER*/
 header{
     margin: 0px;
+    padding: 10px;
     background-color: black;
     display: flex;
 }
@@ -43,7 +45,7 @@ header div{
 }
 header a{
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 11px;
     color: black;
     font-weight: bold;
 }
@@ -57,8 +59,8 @@ header .ent:hover{
     background-color: orange;
     border-radius: 0px 20px 20px 0px;
 }
-
 /*##################################################*/
+
 /*MENU*/
 #menu{
     background-color: black;
@@ -74,10 +76,27 @@ header .ent:hover{
     background-color: white;
     color: black;
     border-radius: 10px 10px 0px 0px;
-    
 }
+#botMenu{
+    display: none;
+}
+
 @media screen and (max-width: 600px){
+    #botMenu{
+        background-color: black;
+        color: white;
+        display: block;
+        padding: 7px;
+        font-weight: bold;
+        text-align: center;
+    }
+    #botMenu:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
     #menu{
+        display: none;
         background-color: black;
         margin: 0px;
         padding-bottom: 0px;
@@ -93,8 +112,8 @@ header .ent:hover{
         border-radius: 0px;
     }
 }
-
 /*##################################################*/
+
 /*MAIN*/
 main{
     background-color: white;
@@ -118,8 +137,8 @@ main #ifrase{
     padding: 0px 20px 60px 20px;
     font-size: 1.2em;
 }
-
 /*##################################################*/
+
 /*MAIN IMAGENS*/
 main .cont{
     background-color: black;
@@ -431,6 +450,7 @@ main .cont #mais:hover{
     transform: translate(0, -4px);
 }
 /*##################################################*/
+
 /*MAIN FORMULÁRIO*/
 #feedback{
     background-color: darkorange;
@@ -461,8 +481,8 @@ main .cont #mais:hover{
 #feedback button:hover{
     background-color: yellow;
 }
-
 /*##################################################*/
+
 /*RODAPÉ*/
 footer{
     background-color: black;
