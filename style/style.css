@@ -37,7 +37,6 @@ header nav{
 header div{
     background-color: rgb(255, 255, 255);
     padding: 10px 0px 9px 0px;
-    overflow: auto;
     display: inline-block;
     border-radius: 20px;
     margin-top: 40px;
