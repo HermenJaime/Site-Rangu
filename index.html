@@ -8,7 +8,7 @@
     <title>Rangu</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Rangu</h1>
 
@@ -18,11 +18,13 @@
                 <a href="#" target="_blank" id="Entrar" class="ent">Entrar</a>
             </div>
         </nav>
-        
+
     </header>
+
     <span class="material-symbols-outlined" onclick="clickMenu()" id="botMenu">
         menu
-        </span>
+    </span>
+
     <nav id="menu">
         <a href="#">Início</a>
 
@@ -175,6 +177,14 @@
     </main>
 
     <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 600){
+                menu.style.display = 'block'
+            }
+            else{
+                menu.style.display = 'none'
+            }
+        }
         function clickMenu(){
             if(menu.style.display == 'none'){
                 menu.style.display = 'block'
